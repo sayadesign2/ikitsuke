@@ -208,7 +208,7 @@ export const VideoPresentationPage = () => {
           {/* 審査員向け操作ガイド（左上） */}
           <div className="vp-judge-notice">
             <div className="vp-judge-badge-row">
-              <span className="vp-judge-badge">審査員向け 操作ガイド</span>
+              <span className="vp-judge-badge">操作ガイド</span>
             </div>
             <div className="vp-judge-items">
               <div className="vp-judge-item">
