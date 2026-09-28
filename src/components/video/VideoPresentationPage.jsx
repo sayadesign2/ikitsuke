@@ -163,7 +163,10 @@ export const SCENES = [
 export const VideoPresentationPage = () => {
   const app = useApp();
   const [currentSceneIdx, setCurrentSceneIdx] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('autoplay') === '1' || params.get('autoplay') === 'true';
+  });
 
   const scene = SCENES[currentSceneIdx];
 
