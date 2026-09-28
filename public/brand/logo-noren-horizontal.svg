@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 110" width="100%" height="100%">
+  <defs>
+    <style>
+      .brand-title-noren {
+        font-family: 'LINE Seed JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Kaku Gothic ProN', sans-serif;
+        font-weight: 800;
+        font-size: 38px;
+        letter-spacing: 0.08em;
+        fill: #14243B;
+      }
+      .brand-sub-noren {
+        font-family: 'Montserrat', 'Inter', -apple-system, sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        letter-spacing: 0.32em;
+        fill: #E6A21E;
+      }
+      .brand-tagline-noren {
+        font-family: 'LINE Seed JP', -apple-system, 'Hiragino Kaku Gothic ProN', sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 0.06em;
+        fill: #64748B;
+      }
+    </style>
+  </defs>
+
+  <!-- シンボルマーク：暖簾をめくって覗き込む人 (角丸スクワークルバッジ) -->
+  <g transform="translate(18, 10)">
+    <rect width="90" height="90" rx="20" fill="#14243B" />
+    
+    <!-- 暖簾バー -->
+    <rect x="16" y="16" width="58" height="3.5" rx="1.7" fill="#F5BA42" />
+    
+    <!-- 暖簾の布（右側） -->
+    <rect x="47" y="21" width="23" height="42" rx="1.5" fill="#1E375A" stroke="#F5BA42" stroke-width="2" />
+    
+    <!-- 暖簾の布（左側・めくられた形状） -->
+    <path d="M20 21 L 43 21 L 43 36 C 43 36, 38 42, 30 52 C 26 48, 22 40, 20 32 Z" 
+          fill="#1E375A" stroke="#F5BA42" stroke-width="2" />
+    
+    <!-- 店内の光（イエロー） -->
+    <path d="M34 21 L 56 21 L 56 64 C 48 64, 38 64, 32 64 C 34 50, 34 36, 34 21 Z" fill="#F5BA42" opacity="0.3" />
+
+    <!-- 人のピクトグラム（頭部＋めくる腕・上半身） -->
+    <circle cx="52" cy="42" r="9" fill="#F5BA42" />
+    <path d="M33 53 C 35 48, 39 49, 43 53 L 49 60 C 53 58, 59 58, 64 61 C 67 62, 69 66, 69 72 L 42 72 C 42 67, 39 64, 36 62 Z" fill="#F5BA42" />
+  </g>
+
+  <!-- ロゴタイプ -->
+  <g transform="translate(128, 16)">
+    <text x="2" y="18" class="brand-tagline-noren">高齢者の自立と外出支援サービス</text>
+    <text x="0" y="56" class="brand-title-noren">イキツケ</text>
+    <text x="4" y="78" class="brand-sub-noren">IKITSUKE</text>
+  </g>
+</svg>

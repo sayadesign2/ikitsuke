@@ -1,0 +1,131 @@
+.prototype-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-root, #0b1120);
+}
+
+/* 16:9 ワイドデモレイアウト（左ステップ固定 ＋ 右ステージ） */
+.demo-main-layout {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 52px);
+  max-height: calc(100vh - 52px);
+  overflow: hidden;
+  position: relative;
+}
+
+/* メインステージ（2台のスマートフォンを左右にゆったり配置） */
+.devices-stage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  padding: 12px 32px;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+  .demo-main-layout {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+  
+  .devices-stage {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 16px;
+    height: auto;
+  }
+}
+
+/* サービス解説セクション（下部） */
+.concept-explainer-section {
+  background: rgba(15, 23, 42, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 24px 60px;
+}
+
+.explainer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.explainer-header {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.explainer-tag {
+  background: rgba(58, 124, 165, 0.2);
+  color: #7DD3FC;
+  border: 1px solid rgba(58, 124, 165, 0.4);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.explainer-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #F8FAFC;
+  letter-spacing: -0.01em;
+}
+
+.explainer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 840px) {
+  .explainer-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.explainer-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 22px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.explainer-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-icon-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.card-icon-header h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #F1F5F9;
+}
+
+.explainer-icon.red { color: #F43F5E; }
+.explainer-icon.green { color: #10B981; }
+.explainer-icon.blue { color: #38BDF8; }
+
+.explainer-card p {
+  font-size: 13px;
+  color: #94A3B8;
+  line-height: 1.6;
+}

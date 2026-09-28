@@ -1,0 +1,94 @@
+:root {
+  /* Base Colors (DESIGN.md) */
+  --bg-base: #F3F6F9;
+  --surface-card: #FFFFFF;
+  --border-subtle: #D8E2EC;
+  --border-focus: #3A7CA5;
+
+  /* Text Colors (DESIGN.md) */
+  --text-primary: #1E293B;      /* 9.5:1 AA達成 */
+  --text-secondary: #475569;    /* 5.5:1 AA達成 */
+  --text-muted: #64748B;
+  --text-inverse: #FFFFFF;
+
+  /* Action & Accent Colors (DESIGN.md) */
+  --accent-blue-bg: #EAF2F7;
+  --accent-blue-border: #B9D3E6;
+  --navy-action: #16324F;
+  --navy-dark: #0D2137;
+  --navy-light: #24466B;
+  --focus-ring: #3A7CA5;
+
+  /* Status Colors */
+  --emerald-success: #059669;
+  --emerald-bg: #ECFDF5;
+  --emerald-border: #A7F3D0;
+  --amber-warning: #D97706;
+  --amber-bg: #FFFBEB;
+  --amber-border: #FDE68A;
+  --orange-bus: #EA580C;
+  --orange-bg: #FFF7ED;
+
+  /* Elevation Shadows */
+  --shadow-card: 0 8px 24px -4px rgba(22, 50, 79, 0.06), 0 2px 6px -1px rgba(22, 50, 79, 0.04);
+  --shadow-modal: 0 20px 40px -8px rgba(22, 50, 79, 0.18), 0 8px 16px -4px rgba(22, 50, 79, 0.08);
+  --shadow-button: 0 4px 12px rgba(22, 50, 79, 0.08);
+
+  /* Border Radii */
+  --radius-card: 22px;
+  --radius-button: 18px;
+  --radius-badge: 9999px;
+  --radius-tile: 14px;
+
+  /* Typography (LINE Seed JP) */
+  --font-ud: "LINE Seed JP", "BIZ UDPGothic", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --font-en: "LINE Seed JP", "Outfit", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-ud);
+  background-color: #0c141d;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(58, 124, 165, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(22, 50, 79, 0.25) 0%, transparent 40%),
+    linear-gradient(180deg, #090e16 0%, #0f1a26 100%);
+  color: #e2e8f0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* Accessible focus styles */
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  touch-action: manipulation;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
