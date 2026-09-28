@@ -364,20 +364,22 @@ export const VideoPresentationPage = () => {
           flex: 1;
           display: flex;
           align-items: stretch;
-          padding: 20px 32px 20px 40px;
-          gap: 32px;
+          padding: 12px 24px 12px 28px;
+          gap: 24px;
           z-index: 1;
           overflow: hidden;
+          height: 100vh;
+          box-sizing: border-box;
         }
 
-        /* ═══════ 左カラム（テキスト） ═══════ */
+        /* ═══════ 左カラム（テキスト：コンパクトに縮小） ═══════ */
         .vp-info {
-          width: 420px;
+          width: 320px;
           flex-shrink: 0;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          gap: 18px;
+          gap: 12px;
         }
 
         /* ブランド行 */
@@ -390,19 +392,19 @@ export const VideoPresentationPage = () => {
         .vp-brand {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 10px;
         }
         .vp-brand-badge {
           background: linear-gradient(135deg, #0284C7, #2563EB);
           color: #fff;
           font-weight: 800;
-          font-size: 13px;
+          font-size: 11px;
           letter-spacing: 0.08em;
-          padding: 4px 10px;
-          border-radius: 8px;
+          padding: 3px 8px;
+          border-radius: 6px;
         }
         .vp-brand-name {
-          font-size: 28px;
+          font-size: 22px;
           font-weight: 800;
           letter-spacing: -0.02em;
         }
@@ -411,9 +413,9 @@ export const VideoPresentationPage = () => {
           background: rgba(30, 41, 59, 0.7);
           border: 1px solid rgba(255, 255, 255, 0.12);
           color: #E2E8F0;
-          font-size: 12px;
+          font-size: 11.5px;
           font-weight: 700;
-          padding: 5px 12px;
+          padding: 4px 10px;
           border-radius: 20px;
           cursor: pointer;
           transition: all 0.15s ease;
@@ -428,39 +430,39 @@ export const VideoPresentationPage = () => {
         .vp-steps-container {
           display: flex;
           flex-direction: column;
-          gap: 8px;
+          gap: 6px;
           background: rgba(15, 23, 42, 0.5);
-          padding: 8px 12px;
-          border-radius: 12px;
+          padding: 7px 10px;
+          border-radius: 10px;
           border: 1px solid rgba(255, 255, 255, 0.07);
         }
 
         .vp-steps-group {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 8px;
         }
 
         .vp-steps-group-label {
-          font-size: 11.5px;
+          font-size: 11px;
           font-weight: 700;
           color: #94A3B8;
-          width: 82px;
+          width: 76px;
           flex-shrink: 0;
         }
 
         .vp-steps {
           display: flex;
-          gap: 5px;
+          gap: 4px;
           flex-wrap: wrap;
         }
         .vp-step {
-          width: 36px; height: 26px;
-          border-radius: 6px;
+          width: 32px; height: 24px;
+          border-radius: 5px;
           background: rgba(30, 41, 59, 0.7);
           border: 1px solid rgba(255,255,255,0.08);
           color: #94A3B8;
-          font-size: 11.5px;
+          font-size: 11px;
           font-weight: 700;
           font-family: monospace;
           display: flex;
@@ -473,7 +475,7 @@ export const VideoPresentationPage = () => {
           background: rgba(37, 99, 235, 0.35);
           border-color: #38BDF8;
           color: #38BDF8;
-          box-shadow: 0 0 12px rgba(56,189,248,0.35);
+          box-shadow: 0 0 10px rgba(56,189,248,0.35);
         }
         .vp-step.done {
           border-color: rgba(16,185,129,0.4);
@@ -484,13 +486,13 @@ export const VideoPresentationPage = () => {
         .vp-scene-badge {
           display: inline-flex;
           align-items: center;
-          gap: 8px;
+          gap: 6px;
           background: rgba(56,189,248,0.12);
           border: 1px solid rgba(56,189,248,0.3);
           color: #38BDF8;
-          font-size: 15px;
+          font-size: 12.5px;
           font-weight: 800;
-          padding: 5px 14px;
+          padding: 4px 10px;
           border-radius: 999px;
           width: fit-content;
           letter-spacing: 0.03em;
@@ -500,13 +502,13 @@ export const VideoPresentationPage = () => {
         }
         .vp-badge-sep {
           opacity: 0.4;
-          font-size: 13px;
+          font-size: 11px;
         }
         .vp-dot {
-          width: 8px; height: 8px;
+          width: 7px; height: 7px;
           border-radius: 50%;
           background: #38BDF8;
-          box-shadow: 0 0 10px #38BDF8;
+          box-shadow: 0 0 8px #38BDF8;
           animation: vpPulse 1.8s infinite;
         }
         @keyframes vpPulse {
@@ -516,11 +518,11 @@ export const VideoPresentationPage = () => {
 
         /* タイトル */
         .vp-title {
-          font-size: 36px;
+          font-size: 24px;
           font-weight: 800;
           color: #FFFFFF;
-          line-height: 1.25;
-          letter-spacing: -0.025em;
+          line-height: 1.3;
+          letter-spacing: -0.02em;
           margin: 0;
           white-space: pre-line;
         }
@@ -529,19 +531,19 @@ export const VideoPresentationPage = () => {
         .vp-actors {
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 8px;
           background: rgba(30,41,59,0.55);
           border: 1px solid rgba(255,255,255,0.1);
-          border-radius: 16px;
-          padding: 16px;
+          border-radius: 12px;
+          padding: 12px;
           backdrop-filter: blur(10px);
         }
         .vp-actor {
           display: flex;
           flex-direction: column;
-          gap: 4px;
-          padding: 10px 14px;
-          border-radius: 10px;
+          gap: 3px;
+          padding: 8px 10px;
+          border-radius: 8px;
           background: rgba(255, 255, 255, 0.04);
           border: 1px solid rgba(255, 255, 255, 0.08);
         }
@@ -556,15 +558,15 @@ export const VideoPresentationPage = () => {
 
         .vp-actor-label {
           display: block;
-          font-size: 13px;
+          font-size: 11.5px;
           font-weight: 700;
-          margin-bottom: 2px;
+          margin-bottom: 1px;
         }
         .vp-actor-user .vp-actor-label { color: #38BDF8; }
         .vp-actor-family .vp-actor-label { color: #A5B4FC; }
 
         .vp-actor-text {
-          font-size: 18px;
+          font-size: 14px;
           font-weight: 600;
           color: #F1F5F9;
           line-height: 1.35;
@@ -574,29 +576,30 @@ export const VideoPresentationPage = () => {
         .vp-value {
           display: flex;
           align-items: flex-start;
-          gap: 10px;
+          gap: 8px;
           background: rgba(15,23,42,0.6);
           border: 1px solid rgba(255,255,255,0.07);
-          border-radius: 12px;
-          padding: 14px 16px;
+          border-radius: 10px;
+          padding: 10px 12px;
         }
-        .vp-value-icon { color: #38BDF8; flex-shrink: 0; margin-top: 2px; }
+        .vp-value-icon { color: #38BDF8; flex-shrink: 0; margin-top: 1px; width: 16px; height: 16px; }
         .vp-value p {
-          font-size: 15px;
+          font-size: 12.5px;
           color: #94A3B8;
-          line-height: 1.45;
+          line-height: 1.4;
           margin: 0;
         }
         .vp-value strong { color: #E2E8F0; }
 
-        /* ═══════ 右カラム（スマホ2台） ═══════ */
+        /* ═══════ 右カラム（スマホ2台：大きくワイドに表示） ═══════ */
         .vp-phones {
           flex: 1;
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 28px;
+          gap: 24px;
           min-width: 0;
+          height: 100%;
         }
 
         .vp-phone-col {
@@ -605,41 +608,42 @@ export const VideoPresentationPage = () => {
           align-items: center;
           height: 100%;
           max-height: 100%;
-          width: 480px;
-          flex-shrink: 0;
+          flex: 1;
+          max-width: 440px;
+          min-width: 320px;
         }
 
         .vp-phone-label {
           display: flex;
           align-items: center;
-          gap: 10px;
-          margin-bottom: 8px;
+          gap: 8px;
+          margin-bottom: 6px;
           flex-shrink: 0;
         }
         .vp-phone-badge {
           color: #fff;
-          font-size: 12px;
+          font-size: 11px;
           font-weight: 700;
-          padding: 3px 10px;
-          border-radius: 6px;
+          padding: 2px 8px;
+          border-radius: 5px;
           letter-spacing: 0.04em;
         }
         .vp-phone-name {
-          font-size: 18px;
+          font-size: 15px;
           font-weight: 700;
           color: #E2E8F0;
         }
 
-        /* スマホ筐体 — 縦長プロポーションでリアルなスマホ感を維持 */
+        /* スマホ筐体 — 縦横比率をバランスよく広げてUIを最大化 */
         .vp-phone-body {
           position: relative;
-          flex: 1;
-          /* 横幅は実機に近い縦長アスペクト比 (9:19) */
-          aspect-ratio: 9 / 19;
+          width: 100%;
+          height: calc(100% - 32px);
           max-height: calc(100% - 32px);
+          aspect-ratio: 9 / 18.5;
           background: #1e293b;
-          border-radius: 36px;
-          padding: 7px;
+          border-radius: 40px;
+          padding: 8px;
           box-shadow:
             0 0 0 1px rgba(255,255,255,0.12),
             0 24px 48px -12px rgba(0,0,0,0.65),
@@ -647,6 +651,7 @@ export const VideoPresentationPage = () => {
           display: flex;
           flex-direction: column;
           overflow: hidden;
+          box-sizing: border-box;
         }
 
         .vp-phone-notch {
@@ -654,7 +659,7 @@ export const VideoPresentationPage = () => {
           top: 10px;
           left: 50%;
           transform: translateX(-50%);
-          width: 80px; height: 16px;
+          width: 84px; height: 16px;
           background: #060b14;
           border-radius: 16px;
           z-index: 50;
@@ -669,7 +674,8 @@ export const VideoPresentationPage = () => {
         .vp-phone-screen {
           width: 100%;
           flex: 1;
-          border-radius: 29px;
+          height: 100%;
+          border-radius: 32px;
           overflow: hidden;
           background: var(--bg-base, #F8FAFC);
           position: relative;
@@ -686,6 +692,7 @@ export const VideoPresentationPage = () => {
           background: rgba(0,0,0,0.2);
           border-radius: 2px;
           z-index: 40;
+          pointer-events: none;
         }
       `}</style>
     </div>
