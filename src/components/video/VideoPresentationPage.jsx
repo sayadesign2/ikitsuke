@@ -205,6 +205,23 @@ export const VideoPresentationPage = () => {
 
         {/* 左カラム：シーン情報 */}
         <aside className="vp-info">
+          {/* 審査員向け操作ガイド（左上） */}
+          <div className="vp-judge-notice">
+            <div className="vp-judge-badge-row">
+              <span className="vp-judge-badge">審査員向け 操作ガイド</span>
+            </div>
+            <div className="vp-judge-items">
+              <div className="vp-judge-item">
+                <span className="vp-judge-icon">👆</span>
+                <span className="vp-judge-txt"><strong>右のスマホ画面</strong>は直接タップして自由に操作可能です</span>
+              </div>
+              <div className="vp-judge-item">
+                <span className="vp-judge-icon">▶</span>
+                <span className="vp-judge-txt"><strong>「自動再生」</strong>で全10シーンのストーリーを自動進行します</span>
+              </div>
+            </div>
+          </div>
+
           {/* ブランドロゴ ＆ コントロール */}
           <div className="vp-brand-row">
             <div className="vp-brand">
@@ -383,6 +400,54 @@ export const VideoPresentationPage = () => {
           flex-direction: column;
           justify-content: center;
           gap: 12px;
+        }
+
+        /* 審査員向け操作ガイド（左上） */
+        .vp-judge-notice {
+          background: rgba(30, 58, 138, 0.25);
+          border: 1px solid rgba(56, 189, 248, 0.35);
+          border-radius: 10px;
+          padding: 8px 12px;
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          backdrop-filter: blur(8px);
+        }
+        .vp-judge-badge-row {
+          display: flex;
+          align-items: center;
+        }
+        .vp-judge-badge {
+          background: rgba(56, 189, 248, 0.2);
+          border: 1px solid rgba(56, 189, 248, 0.4);
+          color: #38BDF8;
+          font-size: 11px;
+          font-weight: 800;
+          padding: 2px 7px;
+          border-radius: 4px;
+          letter-spacing: 0.04em;
+        }
+        .vp-judge-items {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
+        .vp-judge-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 6px;
+          font-size: 11.5px;
+          line-height: 1.35;
+          color: #E2E8F0;
+        }
+        .vp-judge-icon {
+          flex-shrink: 0;
+          font-size: 11.5px;
+          margin-top: 1px;
+        }
+        .vp-judge-txt strong {
+          color: #38BDF8;
+          font-weight: 700;
         }
 
         /* ブランド行 */
